@@ -58,7 +58,7 @@ const addToCartButtons = document.querySelectorAll('.btn.add-to-cart');
 
     // Создаем форму для отправки списка товаров на другой сайт
     const form = document.createElement('form');
-    form.setAttribute('method', 'post');
+    form.setAttribute('method', 'get');
     form.setAttribute('action', 'cart.html');
 
     // Создаем скрытое поле формы для отправки списка товаров
