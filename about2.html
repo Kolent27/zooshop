@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>О нас</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style-other.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">Назад</a></li>
+      </ul>
+    </nav>
+    <h1>Добро пожаловать на сайт <strong>PetShop</strong></h1>
+    <p>Добро пожаловать в наш зоомагазин! Мы - команда профессионалов, которая ценит здоровье и благополучие ваших питомцев. </p>
+  </header>
+   <div class="tabs">
+    <ul>
+      <li class="tab-link current" data-tab="about-us">О нас</li>
+      <li class="tab-link" data-tab="services">Услуги</li>
+      <li class="tab-link" data-tab="contacts">Контакты</li>
+    </ul>
+   </div>
+
+  <div id="about-us" class="tab-content current">
+    <h2>О нас</h2>
+    <p>Наш сайт предлагает широкий выбор товаров для животных: от кормов и лакомств до игрушек и средств гигиены. Мы уделяем особое внимание качеству и безопасности наших товаров, поэтому работаем только с проверенными производителями и поставщиками. <br><br>
+
+На сайте вы найдете корма для собак и кошек различных пород и возрастов, а также для других домашних животных, таких как хомяки, кролики, грызуны и птицы. Мы также предлагаем лакомства и вкусняшки для вашего питомца, включая специальные диетические лакомства. <br><br>
+
+Кроме того, на сайте вы можете купить игрушки и аксессуары для животных, такие как ошейники, поводки, миски, домики и лежаки. У нас есть все необходимое для того, чтобы ваш питомец чувствовал себя комфортно и заботились о нем. <br><br>
+
+Мы понимаем, что здоровье вашего питомца - это наш приоритет, поэтому мы также предлагаем средства гигиены и ухода за вашими животными. У нас есть шампуни, кондиционеры, средства против блох и клещей, щетки и расчески для ухода за шерстью. <br><br>
+
+Наши цены конкурентоспособны, и мы постоянно работаем над тем, чтобы наш ассортимент товаров был широким и разнообразным. Мы уверены, что наш сайт будет вашим надежным партнером в заботе о здоровье и счастье ваших питомцев.</p>
+  </div>
+
+  <div id="services" class="tab-content">
+    <h2>Услуги</h2>
+    <p>Мы предлагаем следующие услуги нашим клиентам:</p>
+    <ul>
+      <li>Программа лояльности для постоянных клиентов, которая предоставляет скидки на покупки и другие привилегии.</li>
+      <li>Консультации опытных специалистов по выбору корма, игрушек и других товаров для вашего питомца.</li>
+      <li>Удобная система оплаты, которая включает онлайн-оплату, оплату картой, оплату при получении заказа.</li>
+      <li>Гарантия на все наши товары.</li>
+      <li>Возврат товара в случае несоответствия или повреждения.</li>
+    </ul>
+  </div>
+
+  <div id="contacts" class="tab-content">
+    <h2>Контакты</h2>
+    <p>Вы можете связаться с нами, используя следующую контактную информацию:</p><br>
+    <ul>
+      <li>Email: zoo@mywebsite.com</li>
+      <li>Телефон: 555-1234</li>
+      <li>Адрес: Карабудахкент, улица Школьная д.5</li>
+    </ul>
+  </div>
+
+
+  <footer>
+    <div class="footer">
+    <div class="row">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    </div>
+    
+    <div class="row">
+    <ul>
+    <li><a href="#">Главная страница</a></li>
+    <li><a href="#">О нас</a></li>
+    <li><a href="#">Обратная связь</a></li>
+    </ul>
+    </div>
+    
+    <div class="row">
+    <p>PetShop Copyright © 2023. Все права защищены || дизайн - Абдурахман</p>
+    </div>
+    </div>
+  </footer>
+  <script>
+    // Получить все вкладки
+  const tabLinks = document.querySelectorAll(".tab-link");
+
+  // Обработчик клика на вкладке
+  tabLinks.forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+
+      // Скрыть все блоки контента
+      document.querySelectorAll(".tab-content").forEach(tabContent => {
+        tabContent.classList.remove("current");
+      });
+
+      // Сделать неактивной текущую вкладку
+      document.querySelectorAll(".tab-link").forEach(tabLink => {
+        tabLink.classList.remove("current");
+      });
+
+      // Показать соответствующий блок контента
+      const tab = e.currentTarget.getAttribute("data-tab");
+      document.querySelector(`#${tab}`).classList.add("current");
+
+      // Сделать активной выбранную вкладку
+      e.currentTarget.classList.add("current");
+    });
+  });
+</script>
+</body>
+</html>
+
+
+

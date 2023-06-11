@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Магазин для животных</title>
+    <link rel="stylesheet" type="text/css" href="css/style-index.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" alt="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="food.html">Корма</a></li>
+          <li><a href="toy.html">Игрушки</a></li>
+          <li><a href="about.html">Подробнее</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+
+      <button id="cart-button"><img src="img/cart.png" alt="Корзина"></button>
+
+      <div class="cart">
+        <h2>Корзина</h2>
+        <ul class="cart-items"></ul>
+        <button class="btn confirm-cart" onclick="redirectToCheckout()">Оформить заказ</button>
+        <button class="btn clear-cart">Очистить корзину</button>
+      </div>
+
+      <section class="products">
+        <h2>Рекомендуемые товары</h2>
+        <ul>
+          <li class="product">
+            <img src="img/c1.jpg" alt="Фото">
+            <h3><a href="t1.html">Tappi игрушки игрушка "Майен" для собак</a></h3>
+            <p>Развлекательная игрушка для вашего питомца</p>
+            <span class="price">400 руб.</span><br><br>
+            <button class="btn add-to-cart">Добавить в корзину</button>
+          </li>
+          <li class="product">
+            <img src="img/c2.jpg" alt="Фото">
+            <h3><a href="t2.html">Tappi игрушки игрушка для собак "Мю"</a></h3>
+            <p>Развлекательная игрушка для вашего питомца</p>
+            <span class="price">500 руб.</span><br><br>
+            <button class="btn add-to-cart">Добавить в корзину</button>
+          </li>
+          <li class="product">
+            <img src="img/a1.jpg" alt="Фото">
+            <h3><a href="3.html">Игрушка для собак</a></h3>
+            <p>Развлекательная игрушка для вашего питомца</p>
+            <span class="price">380 руб.</span><br><br>
+            <button class="btn add-to-cart">Добавить в корзину</button>
+          </li>
+          <li class="product">
+            <img src="img/a2.jpg" alt="Фото">
+            <h3><a href="4.html">Игрушка для кошек</a></h3>
+            <p>Интересная игрушка для вашей кошки</p>
+            <span class="price">300 руб.</span><br><br>
+            <button class="btn add-to-cart">Добавить в корзину</button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+      <div class="row">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+      
+      <div class="row">
+      <ul>
+      <li><a href="#">Главная страница</a></li>
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Обратная связь</a></li>
+      </ul>
+      </div>
+      
+      <div class="row">
+      <p>PetShop Copyright © 2023. Все права защищены || дизайн - Абдурахман</p>
+      </div>
+      </div>
+    </footer>
+    <script src="addcart.js"></script>
+  </body>
+</html>

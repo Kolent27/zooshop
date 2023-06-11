@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&family=Wix+Madefor+Text&display=swap');
+* {
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Wix Madefor Text', sans-serif;
+}
+
+.banner {
+background-color: #f9f9f9;
+padding: 40px;
+text-align: center;
+}
+
+.banner h2 {
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+.banner p {
+font-size: 20px;
+}
+
+.products {
+background-color: #f9f9f9;
+padding: 40px;
+}
+
+.products h2 {
+font-size: 32px;
+margin-bottom: 40px;
+}
+
+.products ul {
+list-style: none;
+display: flex;
+justify-content: space-evenly;
+align-items: flex-start;
+flex-wrap: wrap;
+margin: 0;
+padding: 0;
+}
+
+.products li {
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 10px;
+padding: 20px;
+min-width: 400px;
+max-width: 400px;
+margin-bottom: 20px;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.products li img {
+width: 100%;
+height: 350px;
+object-fit: contain;
+border-radius: 10px;
+margin-bottom: 10px;
+}
+
+.products li h3 {
+font-size: 24px;
+margin-bottom: 10px;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+}
+
+.products li p {
+font-size: 16px;
+margin-bottom: 20px;
+}
+
+.products li .price {
+font-size: 20px;
+font-weight: bold;
+}
+.btn-cart{
+  margin: 10px 0;
+}
+.btn {
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 1.2rem;
+border: 1px solid #107c10;
+display: inline-block;
+padding: 10px 20px;
+background-color: #107c10;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+transition: all 0.2s;
+}
+
+.btn:hover {
+background-color: #fff;
+color: #6da551;
+border: 1px solid #107c10;
+}
+/*Корзина*/
+.cart {
+  box-shadow: -6px 16px 22px 11px rgba(34, 60, 80, 0.2);
+  border-radius: 15px;
+  position: fixed;
+  overflow: auto;
+  top: 10vh;
+  display: none;
+  right: 0;
+  z-index: 999;
+  height: 50vh;
+  background-color: #fff;
+  padding: 10px;
+}
+.cart.show {
+    z-index: 999;
+   display: flex;
+  flex-direction: column;
+}
+.cart img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.cart h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.cart-items>li{
+  padding: 10px;
+  display: flex;
+  width: 500px;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#cart-button{
+  bottom: 0;
+  margin: 20px;
+  right: 0;
+  position: fixed;
+  background: none;
+  border-radius: 50%;
+  z-index: 999;
+  cursor: pointer;
+  border: 3px solid #107c10;
+  padding: 10px;
+}
+#cart-button>img{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+/*Слайдер*/
+.slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  height: 100%;
+}
+
+.slide {
+  position: relative;
+  width: 33.33%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide .text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  text-align: center;
+  z-index: 1;
+}
+.text p{
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+}
+.ad {
+  margin: 30px;
+  padding: 10px;
+  background-color: #0078d7;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.ad>a{
+  color: white;
+  font-size: 1.4em;
+}
+.ad:hover{
+  background-color: #005a9e;
+}
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+
+.dot.active {
+  background-color: #333;
+}
+/*brand*/
+.brand h1{
+  text-align: center;
+  color: white;
+}
+.brand{
+  margin: 30px 0;
+  background-color: #107c10;
+  width: 100%;
+  padding: 10px;
+}
+.brand-img{
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+.brand-img img{
+  margin: 5px;
+  flex: 1;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: cover;
+  max-width: 300px;
+  min-width: 250px;
+  height: 200px;
+}
+.advertise{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px;
+  color: white;
+  background-color: #107c10;
+}
+.advertise-menu{
+  font-size: 1.4em;
+}
+.advertise-menu i{
+  margin: 0 5px;
+  font-size: 1.3em;
+}

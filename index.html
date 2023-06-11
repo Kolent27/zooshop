@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Магазин для животных</title>
+    <link rel="stylesheet" type="text/css" href="css/style-index.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" alt="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="food.html">Корма</a></li>
+          <li><a href="toy.html">Игрушки</a></li>
+          <li><a href="about.html">Подробнее</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+
+      <button id="cart-button"><img src="img/cart.png" alt="Корзина"></button>
+
+      <div class="cart">
+        <h2>Корзина</h2>
+        <ul class="cart-items"></ul>
+        <button class="btn confirm-cart" onclick="redirectToCheckout()">Оформить заказ</button>
+        <button class="btn clear-cart">Очистить корзину</button>
+      </div>
+
+      <section class="banner">
+        <h2>Заботьтесь о своих питомцах</h2>
+        <p>У нас есть все, что вам нужно для здоровья и счастья ваших животных.</p>
+        <a href="about.html" class="btn">Узнать больше</a>
+        </section>
+        <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <img src="img1.jpg">
+            <div class="text"><p>Добро пожаловать в наш интернет-магазин зоотоваров! У нас вы найдете большой выбор кормов для вашего питомца, а также самые разнообразные игрушки, которые порадуют вашего любимца и помогут ему оставаться в форме</p></div>
+          </div>
+          <div class="slide">
+            <img src="img2.jpg">
+            <div class="text"><p>У нас вы найдете корма для питомцев всех возрастов и размеров, а также специальные диетические рационы для животных с особыми потребностями. Кроме того, мы предлагаем широкий выбор игрушек для разных видов животных, от мягких игрушек для кошек до мячей для собак.</p></div>
+          </div>
+          <div class="slide">
+            <img src="img3.jpg">
+            <div class="text"><p>Мы знаем, как важно заботиться о своих питомцах, поэтому мы предлагаем только лучшие корма и игрушки. Наш магазин является надежным и удобным источником для всех, кто заботится о своих питомцах. Заказывайте у нас и вы не пожалеете! Мы гарантируем высокое качество товаров, быструю доставку и лучший сервис.</p></div>
+          </div>
+        </div>
+        <div class="navigation">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      
+      <div class="advertise">
+        <h1><i class="fa fa-envelope-o" aria-hidden="true"></i> Подпишитесь на наши объявления</h1>
+        <div class="advertise-menu">
+          <a href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i> Вконтакте</a>
+          <a href="https://telegram.com"><i class="fa fa-telegram" aria-hidden="true"></i> Телеграм</a>
+          <a href="https://odnoklassniki.com"><i class="fa fa-odnoklassniki" aria-hidden="true"></i> Одноклассники</a>
+        </div>
+      </div>
+
+      <section class="products">
+        <h2>Рекомендуемые товары</h2>
+        <ul>
+          <li class="product">
+            <img src="img/3.jpg" alt="Фото">
+            <h3><a href="1.html">Purina Pro Plan</a></h3>
+            <p>Отличное питание для вашего питомца</p>
+            <span class="price">1300 руб.</span><br><br>
+            <button class="btn add-to-cart">Добавить в корзину</button>
+          </li>
+          <li class="product">
+            <img src="img/1.jpg" alt="Фото">
+            <h3><a href="2.html">ROYAL CANIN® Sterilised</a></h3>
+            <p>Полноценное питание для вашей кошки</p>
+            <span class="price">1000 руб.</span><br><br>
+            <button class="btn add-to-cart">Добавить в корзину</button>
+          </li>
+          <li class="product">
+            <img src="img/a1.jpg" alt="Фото">
+            <h3><a href="3.html">Игрушка для собак</a></h3>
+            <p>Развлекательная игрушка для вашего питомца</p>
+            <span class="price">380 руб.</span><br><br>
+            <button class="btn add-to-cart">Добавить в корзину</button>
+          </li>
+          <li class="product">
+            <img src="img/a2.jpg" alt="Фото">
+            <h3><a href="4.html">Игрушка для кошек</a></h3>
+            <p>Интересная игрушка для вашей кошки</p>
+            <span class="price">300 руб.</span><br><br>
+            <button class="btn add-to-cart">Добавить в корзину</button>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <div class="brand">
+      <h1>Наши бренды</h1>
+      <div class="brand-img">
+        <img src="img/brand1.svg" alt="brand">
+        <img src="img/brand2.jpg" alt="brand">
+        <img src="img/brand3.jpg" alt="brand">
+        <img src="img/brand4.png" alt="brand">
+        <img src="img/brand5.jpg" alt="brand">
+      </div>
+    </div>
+
+      <footer>
+        <div class="footer">
+        <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="#">Главная страница</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Обратная связь</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+        <p>PetShop Copyright © 2023. Все права защищены || дизайн - Абдурахман</p>
+        </div>
+        </div>
+      </footer>
+
+    <script src="addcart.js"></script>
+    <script src="slider.js"></script>
+  </body>
+</html>

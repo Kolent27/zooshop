@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Product Name - Flat Design</title>
+    <link rel="stylesheet" href="css/style-item.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" alt="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="food.html">Корма</a></li>
+          <li><a href="toy.html">Игрушки</a></li>
+          <li><a href="about.html">Подробнее</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <button id="cart-button"><img src="img/cart.png" alt="Корзина"></button>
+
+      <div class="cart">
+        <h2>Корзина</h2>
+        <ul class="cart-items"></ul>
+        <button class="btn confirm-cart" onclick="redirectToCheckout()">Оформить заказ</button>
+        <button class="btn clear-cart">Очистить корзину</button>
+      </div>
+    
+    <main class="main">
+      <div class="product">
+        <div class="product-image">
+          <img src="img/1.jpg" alt="Фото">
+        </div>
+        <div class="product-info">
+          <h2 class="product-name">ROYAL CANIN® Sterilised</h2>
+          <p class="product-description">Влажный корм для кастрированных кошек ROYAL CANIN® Sterilised специально разработан с учетом потребностей взрослых стерилизованных питомцев. Благодаря контролируемому уровню калорийности и умеренному содержанию жиров паучи для кошек ROYAL CANIN® Sterilised в соусе помогает питомцу не набирать избыточный вес (при условии, что при кормлении не превышается рекомендуемый объем порций). </p>
+          <p class="product-price">1000 рублей</p>
+          <button class="btn add-to-cart">Добавить в корзину</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+      <div class="row">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+      
+      <div class="row">
+      <ul>
+      <li><a href="#">Главная страница</a></li>
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Обратная связь</a></li>
+      </ul>
+      </div>
+      
+      <div class="row">
+      <p>PetShop Copyright © 2023. Все права защищены || дизайн - Абдурахман</p>
+      </div>
+      </div>
+    </footer>
+  <script src="addcart2.js"></script>
+  </body>
+</html>
